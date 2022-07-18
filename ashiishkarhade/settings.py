@@ -25,10 +25,13 @@ SECRET_KEY = 'django-insecure-gfoo_r!s)oj%+42&3!w)3n0@s2=5yq)bjr%v_98e(9wnixsaf9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# DJANGO-HEROKU DEPLOYMENT SETUP
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # Application definition
 
@@ -51,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'ashiishkarhade.urls'
