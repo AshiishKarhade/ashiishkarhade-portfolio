@@ -65,9 +65,11 @@
                                         <li></li>
                                         <li><a href="#section-about">About</a></li>
                                         <li></li>
-                                        <li><a href="#section-services">Services</a></li>
+                                        <li><a href="#section-portfolio">Projects</a></li>
                                         <li></li>
-                                        <li><a href="#section-portfolio">Portfolio</a></li>
+                                        <li><a href="#section-talks">Talks and Events</a></li>
+                                        <li></li>
+                                        <li><a href="#section-portfolio">Works</a></li>
                                         <li></li>
                                         <li><a href="#section-blog">Blog</a></li>
                                         <li></li>
@@ -79,7 +81,7 @@
                                 </div>
                                 <div class="align-self-center ml-auto header-col-right">
                                     <div class="social-icons">
-                                        <a href="https://www.facebook.com/ashiishkarhade"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="https://www.github.com/ashiishkarhade"><i class="fa fa-github fa-lg"></i></a>
                                         <a href="https://www.linkedin.com/in/ashiishkarhade"><i class="fa fa-linkedin fa-lg"></i></a>
                                         <a href="https://twitter.com/ashiishkarhade"><i class="fa fa-twitter fa-lg"></i></a>
                                         <a href="https://www.instagram.com/ashiishkarhade"><i class="fa fa-instagram fa-lg"></i></a>
@@ -101,7 +103,7 @@
                     <!-- logo begin -->
                     <div id="sc-logo">
                         <a href="index.html">
-                            <img src="{% static 'images/misc/profile-2.jpg' %}" class="img-fluid" alt="">
+                            <img src="{% static 'images/profile-pic.png' %}" class="img-fluid" alt="">
                             <h1>Ashish Karhade</h1>
                         </a>
                     </div>
@@ -113,9 +115,9 @@
                         <li></li>
                         <li><a href="#section-about">About</a></li>
                         <li></li>
-                        <li><a href="#section-services">Services</a></li>
+                        <li><a href="#section-portfolio">Projects</a></li>
                         <li></li>
-                        <li><a href="#section-portfolio">Portfolio</a></li>
+                        <li><a href="#section-talks">Talks and Events</a></li>
                         <li></li>
                         <li><a href="#section-blog">Blog</a></li>
                         <li></li>
@@ -125,7 +127,7 @@
                     <!-- mainmenu close -->
 
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/ashiishkarhade"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a href="https://www.github.com/ashiishkarhade"><i class="fa fa-github fa-lg"></i></a>
                         <a href="https://www.linkedin.com/in/ashiishkarhade"><i class="fa fa-linkedin fa-lg"></i></a>
                         <a href="https://twitter.com/ashiishkarhade"><i class="fa fa-twitter fa-lg"></i></a>
                         <a href="https://www.instagram.com/ashiishkarhade"><i class="fa fa-instagram fa-lg"></i></a>
@@ -143,7 +145,7 @@
             <div class="no-bottom no-top text-light" id="content" data-bgcolor="#202020">
                 <div id="top"></div>
 
-                <section id="section-hero" class="vertical-center text-light" data-bgimage="url({% static 'images/background/4.jpg' %}) top" data-stellar-background-ratio=".5">
+                <section id="section-hero" class="vertical-center text-light" data-bgimage="url({% static 'images/homeAshish.jpg' %}) top" data-stellar-background-ratio=".5">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 offset-md-2 text-center">
@@ -164,9 +166,9 @@
                             <div class="spacer-30"></div>
 
                             <div class="col-md-6 offset-md-3 text-center">
-                                <p class="lead wow fadeInUp" data-wow-delay=".75s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p class="lead wow fadeInUp" data-wow-delay=".75s">Software Development Engineer at Credit Suisse</p>
                                 <div class="spacer-20"></div>
-                                <a class="btn-custom scroll-to wow fadeInUp" data-wow-delay="1s" href="#section-about">About Me</a>
+                                <a class="btn-custom scroll-to wow fadeInUp" href="https://drive.google.com/file/d/18blb0TKRLxRdXcJ9ci1eprCYR_5fDhIH/view?usp=sharing" target="_blank" data-wow-delay="1s" href="#section-about">View CV</a>
                             </div>
                         </div>
                     </div>
@@ -175,19 +177,31 @@
                 <section id="section-about" data-bgcolor="#202020">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-lg-6 mb-sm-30 text-center">
-                                <div class="de-images">
-                                    <img class="di-small-2 wow fadeInLeft" src="{% static 'images/misc/3b.jpg' %}" alt="" />
-                                    <img class="img-fluid wow fadeInRight" src="{% static 'images/misc/3a.jpg' %}" alt="" />
-                                </div>
-                            </div>
+{#                            <div class="col-lg-6 mb-sm-30 text-center">#}
+{#                                <div class="de-images">#}
+{#                                    <img class="di-small-2 wow fadeInLeft" src="{% static 'images/misc/3b.jpg' %}" alt="" />#}
+{#                                    <img class="img-fluid wow fadeInRight" src="{% static 'images/misc/3a.jpg' %}" alt="" />#}
+{#                                </div>#}
+{#                            </div>#}
 
-                            <div class="col-lg-5 offset-md-1 wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="col-lg-9 offset-md-1 wow fadeInLeft" data-wow-delay=".5s">
                                 <h2>About Me</h2>
-                                <p>
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                                </p>
+{#                                <h3>hello 👋</h3>
+                                  <p> I am working as Software Development Engineer at Credit-Suisse. I have completed my bachelors in Computer Science from University of Pune (now Savitribai Phule Pune University) 🎓 with deep interest in <strong> Data Science and Machine Learning</strong>.
+                                    I have always enjoyed to solve problems and building something since I was young. That's how I look at this field of Data Science with vast amount of <strong>data</strong> and how this data can be used to solve the problems
+                                    that we humans face in our life.
+                                  </p>
+                                  <h3>My Journey 👨‍💻</h3>
+                                  <p>
+                                    I learned how to code from different online and offline courses, codeacademy and trial and error methods.
+                                    Each project taught me new skills. I started my journey by learning Android Development and <strong>fell in love with Data Science</strong>
+                                    when it was introduced to me by one of my mentor. I am learning everyday ever since.
+                                  </p>
+                                  <h3>For Opportunities 🤝</h3>
+                                  <p>
+                                  I am <strong>looking for wonderful opportunities</strong> in the fields of Data Science and Machine Learning.
+                                  <strong>Do you want to work together?</strong> Please reach out to me by e-mail or connect with me on <a href="https://www.linkedin.com/in/ashiishkarhade" class="btn btn-default">LinkedIn</a></p>
+
                                 <div class="spacer-10"></div>
                                 <span id="btn-show-skills" class="btn-border wow fadeInUp" data-wow-delay="1s">Show My Skills</span>
                             </div>
@@ -196,6 +210,7 @@
                         <div id="skills" class="row">
                             <div class="spacer-double"></div>
                             <div class="spacer-double"></div>
+
                             <div class="col-md-4">
                                 <div class="skill-bar style-2">
                                     <h5>Design</h5>
@@ -254,260 +269,115 @@
                     </div>
                 </section>
 
-                <section id="section-services" data-bgcolor="#252525">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 offset-lg-3">
-                                <div class="text-center">
-                                    <h2>Our Services</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <div class="spacer-30"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-laptop id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>Website Design</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-paper-plane-o id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>Email Marketing</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".5s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-line-chart id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>Digital Analytics</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-object-group id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>Visual Editor</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-hdd-o id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>Backup &amp; Security</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".5s">
-                                <div class="f-box f-icon-left f-icon-circle f-border">
-                                    <i class="fa fa-comments-o id-color"></i>
-                                    <div class="fb-text">
-                                        <h4>IT Consultancy</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <section id="section-cta" class="text-light" data-bgimage="url({% static 'images/background/3.jpg' %}) top" data-stellar-background-ratio=".5">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8 offset-md-2 text-center">
-                                <h2>I Am Available For Freelancer</h2>
+                                <h2>I Am Available For Awesome Opportunities</h2>
                                 <div class="spacer-10"></div>
-                                <a href="#" class="btn-custom">Hire Me Now</a>
+                                <a href="mailto:akarhade5@gmail.com" class="btn-custom">Hire Me Now</a>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- section begin -->
-                <section id="section-testimonial" data-bgcolor="#252525">
+{# =================================PORTFOLIO=========================================== #}
+                <section id="section-portfolio" data-bgcolor="#202020">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="text-center">
-                                    <h2>Testimonials</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h2>Projects</h2>
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
+                                    <div class="spacer-30"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        {% for project in projects %}
+                            <div class="col-lg-4 col-md-6 mb30">
+                                <div class="bloglist item">
+                                    <div class="post-content">
+                                        <div class="post-image">
+                                            <img alt="" src="{% static 'images/project-images/' %}{{project.image_name}}.jpg" />
+                                            <div class="post-info">
+                                                <div class="inner"><span class="post-date">{{ project.dates }}</span> <span class="post-author">Ashish Karhade</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="post-text">
+                                            <h4><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></h4>
+                                            <p>{{ project.description }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </section>
+
+{# =================================TALKS AND EVENTS=========================================== #}
+                <section id="section-talks" data-bgcolor="#252525">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="text-center">
+                                    <h2>Talks and Events</h2>
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
                                     <div class="spacer-30"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
-                                <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
-                                    <blockquote class="testimonial-big text-light">
-                                        <img src="{% static 'images/people/1.jpg' %}" alt="" />
-                                        I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip.
 
-                                        <span class="name">John, Customer</span>
-                                    </blockquote>
-
-                                    <blockquote class="testimonial-big text-light">
-                                        <img src="{% static 'images/people/2.jpg' %}" alt="" />
-                                        I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip.
-
-                                        <span class="name">Sandra, Customer</span>
-                                    </blockquote>
-
-                                    <blockquote class="testimonial-big text-light">
-                                        <img src="{% static 'images/people/3.jpg' %}" alt="" />
-                                        I'm always impressed with the services. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip.
-
-                                        <span class="name">Michael, Customer</span>
-                                    </blockquote>
+                            {% for talk in talks %}
+                                <div class="col-lg-4 col-md-6 mb30">
+                                    <div class="bloglist item">
+                                        <div class="post-content">
+                                            <div class="post-image">
+                                                <img alt="" src="{% static 'images/project-images/' %}{{talk.image_name}}.jpg" />
+                                                <div class="post-info">
+                                                    <div class="inner"><span class="post-date">{{ talk.dates }}</span> <span class="post-author">Ashish Karhade</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="post-text">
+                                                <h4><a href="{{ talk.link }}" target="_blank">{{ talk.title }}</a></h4>
+                                                <p>{{ talk.description }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            {% endfor %}
+
+{#                            <div class="col-lg-4 col-md-6 mb30">#}
+{#                                <div class="bloglist item">#}
+{#                                    <div class="post-content">#}
+{#                                        <div class="post-image">#}
+{#                                            <img alt="" src="{% static 'images/news/1.jpg' %}" />#}
+{#                                            <div class="post-info">#}
+{#                                                <div class="inner"><span class="post-date">June 7, 2021</span> <span class="post-author">Ashish Karhade</span></div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="post-text">#}
+{#                                            <h4><a href="https://ashiishkarhade.medium.com/apple-music-streaming-data-analysis-29da9f1936dd" target="_blank">Apple Music Streaming Data Analysis</a></h4>#}
+{#                                            <p>I analysed my personal music data from Apple Music and found out amazing interesting insights about my taste in music.</p>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
                         </div>
                     </div>
                 </section>
-                <!-- section close -->
-{# =================================PORTFOLIO=========================================== #}
-                <!-- section begin -->
-                <section id="section-portfolio" data-bgcolor="#202020">
-                    <div class="container">
-                        <!-- portfolio filter begin -->
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                                <h5><span class="id-color">Portfolio</span></h5>
-                                <h2>I Love What I Do</h2>
-                            </div>
-
-                            <div class="spacer-single"></div>
-
-                            <div class="col-md-12 text-center">
-                                <ul id="filters">
-                                    <li><a href="#" data-filter="*" class="selected">all projects</a></li>
-                                    <li><a href="#" data-filter=".illustration">illustration</a></li>
-                                    <li><a href="#" data-filter=".mobile">mobile</a></li>
-                                    <li><a href="#" data-filter=".photography">photography</a></li>
-                                    <li><a href="#" data-filter=".website">website</a></li>
-                                </ul>
-
-                                <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
-                                    <!-- gallery item -->
-                                    <div class="item illustration website gallery-item pf-click" data-value="project-details-image.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Multi Images</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/1.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-
-                                    <!-- gallery item -->
-                                    <div class="item photography gallery-item pf-click" data-value="project-details-slider.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Slider Images</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/2.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-
-                                    <!-- gallery item -->
-                                    <div class="item illustration gallery-item pf-click" data-value="project-details-youtube.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Youtube Video</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/3.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-
-                                    <!-- gallery item -->
-                                    <div class="item photography illustration mobile gallery-item pf-click" data-value="project-details-image-big.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Multi Images Big</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/4.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-
-                                    <!-- gallery item -->
-                                    <div class="item photography mobile website gallery-item pf-click" data-value="project-details-slider-big.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Slider Images Big</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/5.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-
-                                    <!-- gallery item -->
-                                    <div class="item mobile website gallery-item pf-click" data-value="project-details-youtube-big.html">
-                                        <div class="picframe wow">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Youtube Video Big</span>
-                                                </span>
-                                            </span>
-                                            <img src="{% static 'images/portfolio-2/6.jpg' %}" alt="" />
-                                        </div>
-                                    </div>
-                                    <!-- close gallery item -->
-                                </div>
-                            </div>
-                            <!-- portfolio filter close -->
-                        </div>
-                    </div>
-                </section>
-                <!-- section close -->
-
-                <div id="loader-area" class="la-dark" data-bgcolor="#202020">
-                    <div class="container">
-                        <div class="project-load"></div>
-                    </div>
-                </div>
 {# =================================BLOG=========================================== #}
                 <section id="section-blog" data-bgcolor="#252525">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="text-center">
-                                    <h2>Our Blog</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h2>My Blogs</h2>
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
                                     <div class="spacer-30"></div>
                                 </div>
                             </div>
@@ -520,12 +390,12 @@
                                         <div class="post-image">
                                             <img alt="" src="{% static 'images/news/1.jpg' %}" />
                                             <div class="post-info">
-                                                <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
+                                                <div class="inner"><span class="post-date">June 7, 2021</span> <span class="post-author">Ashish Karhade</span></div>
                                             </div>
                                         </div>
                                         <div class="post-text">
-                                            <h4><a href="#">Better User Interface</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <h4><a href="https://ashiishkarhade.medium.com/apple-music-streaming-data-analysis-29da9f1936dd" target="_blank">Apple Music Streaming Data Analysis</a></h4>
+                                            <p>I analysed my personal music data from Apple Music and found out amazing interesting insights about my taste in music.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -537,12 +407,12 @@
                                         <div class="post-image">
                                             <img alt="" src="{% static 'images/news/2.jpg' %}" />
                                             <div class="post-info">
-                                                <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
+                                                <div class="inner"><span class="post-date">January 28, 2021</span> <span class="post-author">Ashish Karhade</span></div>
                                             </div>
                                         </div>
                                         <div class="post-text">
-                                            <h4><a href="#">Experts Web Design Tips</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <h4><a href="https://ashiishkarhade.medium.com/my-experience-of-teaching-machine-learning-f17adb01d47a" target="_blank">Explore ML 2021 @ Google</a></h4>
+                                            <p>I spent amazing time on 2-days explore ml program at Google Office, Hyderabad. Check out what happened over there!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -554,12 +424,12 @@
                                         <div class="post-image">
                                             <img alt="" src="{% static 'images/news/3.jpg' %}" />
                                             <div class="post-info">
-                                                <div class="inner"><span class="post-date">10 hours ago</span> <span class="post-author">Oscar Helman</span></div>
+                                                <div class="inner"><span class="post-date">Infinity</span> <span class="post-author">Ashish Karhade</span></div>
                                             </div>
                                         </div>
                                         <div class="post-text">
-                                            <h4><a href="#">Importance Of Web Design</a></h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <h4><a href="https://ashiishkarhade.medium.com/" target="_blank">Blog Page</a></h4>
+                                            <p>I write all of my blogs on Medium. Check out my page to read all of my reads. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -574,14 +444,14 @@
                         <div class="row">
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="text-center">
-                                    <h2>Contact Us</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h2>Contact Me</h2>
+                                    <p> Reach out for me here! </p>
                                     <div class="spacer-30"></div>
                                 </div>
                             </div>
                         </div>
 
-                        <form name="contactForm" id="contact_form" class="row form-default form-dark" method="post" action="email.php">
+                        <form name="contactForm" id="contact_form" class="row form-default form-dark" method="post" >
                             <div class="col-md-6">
                                 <div class="field-set">
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
@@ -613,7 +483,7 @@
                                     <input type="submit" id="send_message" value="Submit Form" class="btn btn-custom color-2" />
                                 </div>
                                 <div id="mail_success" class="success">Your message has been sent successfully.</div>
-                                <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
+                                <div id="mail_fail" class="error">Sorry, error occurred this time sending your message.</div>
                             </div>
                         </form>
 
@@ -623,7 +493,7 @@
                             <div class="col-md-4">
                                 <div class="wm-1"></div>
                                 <i class="icon_mobile id-color size40 mb20"></i>
-                                <h6 class="id-color">Call Us</h6>
+                                <h6 class="id-color">Call/Text Me</h6>
                                 <p>+91 70664 62818</p>
                             </div>
 
