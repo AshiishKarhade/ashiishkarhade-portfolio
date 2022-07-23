@@ -1,4 +1,9 @@
+/*:root {*/
+/*  --primary-color: #ffb135;*/
+/*  --primary-color-rgb: 255,177,53;*/
+/*}*/
+
 :root {
-  --primary-color: #ffb135;
-  --primary-color-rgb: 255,177,53;
+  --primary-color: #FB8122;
+  /*--primary-color-rgb: 255,177,53;*/
 }
