@@ -27,7 +27,7 @@
         <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 
         <!-- color scheme -->
-        <link id="colors" href="{% static 'css/colors/scheme-02.css' %}" rel="stylesheet" type="text/css" />
+        <link id="colors" href="{% static 'css/colors/scheme-06.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
     </head>
 
@@ -52,7 +52,7 @@
                                 <div class="align-self-center header-col-left">
                                     <!-- logo begin -->
                                     <div id="logo">
-                                        <a href="index.html">
+                                        <a href="#section-hero">
                                             Ashish Karhade
                                         </a>
                                     </div>
@@ -102,7 +102,7 @@
                 <div class="sc-inner">
                     <!-- logo begin -->
                     <div id="sc-logo">
-                        <a href="index.html">
+                        <a href="#section-hero">
                             <img src="{% static 'images/profile-pic.png' %}" class="img-fluid" alt="">
                             <h1>Ashish Karhade</h1>
                         </a>
@@ -206,66 +206,24 @@
                                 <span id="btn-show-skills" class="btn-border wow fadeInUp" data-wow-delay="1s">Show My Skills</span>
                             </div>
                         </div>
-     {#====================   DJANGO BLOCK    ======================= #}
+
                         <div id="skills" class="row">
                             <div class="spacer-double"></div>
                             <div class="spacer-double"></div>
 
-                            <div class="col-md-4">
-                                <div class="skill-bar style-2">
-                                    <h5>Design</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="80%"></div>
+                            {% for skill in skills %}
+                                <div class="col-md-4">
+                                    <div class="skill-bar style-2">
+                                        <h5>{{ skill.name }}</h5>
+                                        <div class="de-progress">
+                                            <div class="value"></div>
+                                            <div class="progress-bar" data-value="{{ skill.value }}%"></div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="skill-bar style-2">
-                                    <h5>Branding</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="70%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="skill-bar style-2">
-                                    <h5>Marketing</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="70%"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-bar style-2">
-                                    <h5>Development</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="90%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="skill-bar style-2">
-                                    <h5>Photography</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="90%"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-bar style-2">
-                                    <h5>SEO</h5>
-                                    <div class="de-progress">
-                                        <div class="value"></div>
-                                        <div class="progress-bar" data-value="75%"></div>
-                                    </div>
-                                </div>
-                            </div>
-                {#====================   DJANGO BLOCK ENDS   ======================= #}
+                            {% endfor %}
                         </div>
+
                     </div>
                 </section>
 
@@ -330,13 +288,12 @@
                         </div>
 
                         <div class="row">
-
                             {% for talk in talks %}
                                 <div class="col-lg-4 col-md-6 mb30">
                                     <div class="bloglist item">
                                         <div class="post-content">
                                             <div class="post-image">
-                                                <img alt="" src="{% static 'images/project-images/' %}{{talk.image_name}}.jpg" />
+                                                <img alt="" src="{% static 'images/talk-images/' %}{{ talk.image_name }}.jpg" />
                                                 <div class="post-info">
                                                     <div class="inner"><span class="post-date">{{ talk.dates }}</span> <span class="post-author">Ashish Karhade</span></div>
                                                 </div>
@@ -350,23 +307,6 @@
                                 </div>
                             {% endfor %}
 
-{#                            <div class="col-lg-4 col-md-6 mb30">#}
-{#                                <div class="bloglist item">#}
-{#                                    <div class="post-content">#}
-{#                                        <div class="post-image">#}
-{#                                            <img alt="" src="{% static 'images/news/1.jpg' %}" />#}
-{#                                            <div class="post-info">#}
-{#                                                <div class="inner"><span class="post-date">June 7, 2021</span> <span class="post-author">Ashish Karhade</span></div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{#                                        <div class="post-text">#}
-{#                                            <h4><a href="https://ashiishkarhade.medium.com/apple-music-streaming-data-analysis-29da9f1936dd" target="_blank">Apple Music Streaming Data Analysis</a></h4>#}
-{#                                            <p>I analysed my personal music data from Apple Music and found out amazing interesting insights about my taste in music.</p>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                            </div>#}
-{##}
                         </div>
                     </div>
                 </section>
@@ -377,63 +317,31 @@
                             <div class="col-lg-6 offset-lg-3">
                                 <div class="text-center">
                                     <h2>My Blogs</h2>
-{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>#}
+{#                                    <h5><a href="https://ashiishkarhade.medium.com/">All Medium Blogs</a></h5>#}
                                     <div class="spacer-30"></div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
+                            {% for blog in blogs %}
                             <div class="col-lg-4 col-md-6 mb30">
                                 <div class="bloglist item">
                                     <div class="post-content">
                                         <div class="post-image">
-                                            <img alt="" src="{% static 'images/news/1.jpg' %}" />
+                                            <img alt="" src="{% static 'images/blog-images/' %}{{ blog.image_name }}.jpg" />
                                             <div class="post-info">
-                                                <div class="inner"><span class="post-date">June 7, 2021</span> <span class="post-author">Ashish Karhade</span></div>
+                                                <div class="inner"><span class="post-date">{{ blog.dates }}</span> <span class="post-author">Ashish Karhade</span></div>
                                             </div>
                                         </div>
                                         <div class="post-text">
-                                            <h4><a href="https://ashiishkarhade.medium.com/apple-music-streaming-data-analysis-29da9f1936dd" target="_blank">Apple Music Streaming Data Analysis</a></h4>
-                                            <p>I analysed my personal music data from Apple Music and found out amazing interesting insights about my taste in music.</p>
+                                            <h4><a href="{{ blog.link }}" target="_blank">{{ blog.title }}</a></h4>
+                                            <p>{{ blog.description }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 mb30">
-                                <div class="bloglist item">
-                                    <div class="post-content">
-                                        <div class="post-image">
-                                            <img alt="" src="{% static 'images/news/2.jpg' %}" />
-                                            <div class="post-info">
-                                                <div class="inner"><span class="post-date">January 28, 2021</span> <span class="post-author">Ashish Karhade</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="post-text">
-                                            <h4><a href="https://ashiishkarhade.medium.com/my-experience-of-teaching-machine-learning-f17adb01d47a" target="_blank">Explore ML 2021 @ Google</a></h4>
-                                            <p>I spent amazing time on 2-days explore ml program at Google Office, Hyderabad. Check out what happened over there!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb30">
-                                <div class="bloglist item">
-                                    <div class="post-content">
-                                        <div class="post-image">
-                                            <img alt="" src="{% static 'images/news/3.jpg' %}" />
-                                            <div class="post-info">
-                                                <div class="inner"><span class="post-date">Infinity</span> <span class="post-author">Ashish Karhade</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="post-text">
-                                            <h4><a href="https://ashiishkarhade.medium.com/" target="_blank">Blog Page</a></h4>
-                                            <p>I write all of my blogs on Medium. Check out my page to read all of my reads. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </section>
@@ -544,7 +452,6 @@
 
         <!-- Javascript Files
     ================================================== -->
-        {% static 'css/bootstrap.min.css' %}
         <script src="{% static 'js/jquery.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
         <script src="{% static 'js/wow.min.js' %}"></script>

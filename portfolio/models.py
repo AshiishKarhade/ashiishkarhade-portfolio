@@ -42,3 +42,12 @@ class TalksClass(Work):
 class BlogsClass(Work):
     def __str__(self):
         print("Blogs : " + self.title)
+
+
+class SkillClass:
+    def __init__(self, name="", value="0"):
+        self.name = name
+        self.value = value
+
+    def __str__(self):
+        return self.name

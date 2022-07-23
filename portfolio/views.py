@@ -1,13 +1,13 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import ContactForm, ProjectsClass, TalksClass, BlogsClass
+from .models import ContactForm, ProjectsClass, TalksClass, BlogsClass, SkillClass
 
 projects = [
     ProjectsClass("14042021", "Whatsapp Data Analysis",
                   "Analysing my personal group chat and finding out interesting insights about it",
                   "https://deepnote.com/@ashish-karhade/whatsapp-data-analysis-ee8e7939-c4c7-44d7-967f-972aa6fac8de",
-                  "1"),
+                  "project-image-1"),
     ProjectsClass("20122020", "Dog Breed Classifier",
                   "Check the breed of the dog from image, or check which dog looks like you.",
                   "https://github.com/AshiishKarhade/Dog-Breed-Classifier", "project-image-2"),
@@ -27,7 +27,20 @@ talks = [
 
 
 blogs = [
-   "blogs"
+    BlogsClass("07062021", "Apple Music Streaming Data Analysis", "I analysed my personal music data from Apple Music and found out amazing interesting insights about my taste in music",
+              "https://ashiishkarhade.medium.com/apple-music-streaming-data-analysis-29da9f1936dd", "blog-image-1"),
+    BlogsClass("28012020", "Explore ML 2021 @ Google", "I spent amazing time on 2-days explore ml program at Google Office, Hyderabad. Check out what happened over there!",
+              "https://ashiishkarhade.medium.com/my-experience-of-teaching-machine-learning-f17adb01d47a", "blog-image-2"),
+    BlogsClass("01012020", "Medium Blog Page", "Read all of my blogs in here",
+              "https://ashiishkarhade.medium.com/", "blog-image-3"),
+]
+
+skills = [
+    SkillClass("Python", "90"),
+    SkillClass("C++", "80"),
+    SkillClass("Go", "70"),
+    SkillClass("Machine Learning", "75"),
+    SkillClass("Devops", "80")
 ]
 
 
@@ -35,7 +48,8 @@ blogs = [
 def home(request):
     context = {"projects": projects,
                "talks": talks,
-               "blogs": blogs
+               "blogs": blogs,
+               "skills": skills
                }
     return render(request, 'index.html', context=context)
 
