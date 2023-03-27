@@ -1,7 +1,7 @@
 asgiref==3.5.2
 dj-database-url==0.5.0
-Django==4.0.6
-django-heroku==0.0.0
+Django
+django-heroku
 gunicorn==20.1.0
 sqlparse==0.4.2
 whitenoise==6.2.0
